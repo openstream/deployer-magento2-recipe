@@ -1,6 +1,6 @@
 # Magento 2 Recipe for Deployer
 
-A recipe (tasklist) for deploying simple Magento 2 projects with the help of [deployer](deployer.org).
+A recipe (tasklist) for deploying simple Magento 2 projects with the help of [deployer](https://deployer.org/).
 
 ## Overview
 
@@ -48,7 +48,7 @@ Both of them are made for simplification: there is no need for a special build s
 
 Oleh Kravets [oleh@openstream.ch](oleh@openstream.ch)
 
-Website: [openstream.ch](openstream.ch)
+Website: [openstream.ch](https://www.openstream.ch/)
 
 ## License
 
