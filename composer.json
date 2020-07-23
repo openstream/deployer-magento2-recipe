@@ -4,6 +4,6 @@
   "description": "Recipe for Deployer for simple Magento 2 deployment",
   "require": {
     "deployer/deployer": "^6.0",
-    "magento/product-community-edition": "^2.2"
+    "magento/product-community-edition": ">=2.2"
   }
 }
