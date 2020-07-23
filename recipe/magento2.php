@@ -42,7 +42,8 @@ task('magento:compile', function () {
 desc('Deploy assets');
 task('magento:deploy:static-content', function () {
     if (has('locales') && (get('locales'))) {
-        run("{{bin/php}} {{release_path}}/bin/magento setup:static-content:deploy {{locales}} -f ");
+        $excludeTheme = get('exclude_theme') ? '--exclude-theme {{exclude_theme}}' : '';
+        run("{{bin/php}} {{release_path}}/bin/magento setup:static-content:deploy {{locales}} -f {$excludeTheme}");
     }
 });
 

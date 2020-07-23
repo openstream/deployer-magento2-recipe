@@ -17,6 +17,7 @@ $settings = [
     'application'     => 'APP_NAME',
     'bin/magerun2'    => '~/n98-magerun2',
     'repository'      => '{PATH_TO_GIT_REPOSITORY}',
+    'exclude_theme'    => 'Magento/luma'
 ];
 
 foreach ($settings as $key => $value) {
