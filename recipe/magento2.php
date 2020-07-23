@@ -7,7 +7,7 @@
 
 namespace Deployer;
 
-require_once __DIR__ . '/../../deployer/deployer/recipe/common.php';
+require_once __DIR__ . '/../../../deployer/deployer/recipe/common.php';
 
 // (Default) Configuration.
 // All values can be overwritten in an inventory file. For example in hosts.yml
