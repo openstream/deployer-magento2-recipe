@@ -17,8 +17,9 @@ Supported versions:
 
 The configuration (`hosts.yml`) and execution file (`deploy.php`) are projects specific and should be added to the project VCS.
 
-It's possible to add this recipe with composer but you might also want to add some more tasks or change existing ones 
-in the recipe (`magento.php`) so it might make sense to add that file to VCS and make it project-specific as well. 
+It's recommended to add this recipe with composer. In case you want to add some more tasks or change existing ones 
+in the recipe (`magento2.php`) you can do it `deploy.php` ode include more files. 
+Or it even might make sense to add the recipe file to VCS and make it project-specific as well. 
 
 ## Usage
 
@@ -33,6 +34,8 @@ In case something happened the task remains locked and can be unlocked as follow
 Subtasks can also be executed separately, for example:
 
 `vendor/bin/dep magento:db:dump test`
+
+Note, that in case you've changed the configuration you have to make sure that it is updated in document root (e.g. `git pull`) before starting the deployment, otherwise the deployment will be run with the previous configuration.
 
 ## Implementation details
 
